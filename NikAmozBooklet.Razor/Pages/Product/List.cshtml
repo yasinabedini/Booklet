@@ -1,0 +1,10 @@
+﻿@page "/Product/List"
+@model NikAmozBooklet.Razor.Pages.Product.ListModel
+@{
+    <h1>Product LIST</h1>
+    @foreach (var person in Model.People)
+    {
+        <p>@person.Name</p>
+        <p>@person.Age</p>
+    }
+}
