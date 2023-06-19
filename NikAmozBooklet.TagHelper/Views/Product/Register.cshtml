@@ -1,0 +1,40 @@
+﻿@using NikAmozBooklet.TagHelpers.Models;
+@model Product
+
+
+@*tag helper from (FORM TAG)*@
+<form asp-controller="Product" asp-action="Regsiter" method="post">
+    <div asp-validation-summary="All"></div>
+
+    <div>
+        <label asp-for="Name"></label>
+        <input asp-for="Name" type="text" class="form-control"/>
+        <span asp-validation-for="Name"></span>
+    </div>
+
+     <div>
+        <label asp-for="Price"></label>
+        <input asp-for="Price" type="number" class="form-control" />
+        <span asp-validation-for="Price"></span>
+    </div>
+
+</form>
+
+
+@*tag helper from (a TAG)*@
+<a asp-controller="" asp-action="" asp-route-id="" asp-route-name=""></a>
+
+@*Catch Information*@
+<cache expires-after="TimeSpan.FromSeconds(5)">
+    @DateTime.Now.Ticks
+</cache>
+
+
+@*filter rendering by Environment*@
+<environment include="development">
+    <p>development</p>
+</environment>
+
+<environment exclude="production">
+    <p>exclude production</p>
+</environment>
