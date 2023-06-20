@@ -4,7 +4,8 @@ namespace NikAmozBooklet.TagHelpers.TagHelpers
 {
     public class TrTagHelper:TagHelper
     {
-        public string CellText { get; set; }
+        public string 
+            CellText { get; set; }
 
         public override void Process(TagHelperContext context, TagHelperOutput output)
         {

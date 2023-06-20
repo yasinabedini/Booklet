@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc.ViewComponents;
 namespace NikAmozBookletViewComponent.Components
 {
     public class ProductNameViewComponent : ViewComponent
-    {     
+    {
         public ViewViewComponentResult Invoke(string viewName)
         {
             SortedList<string, string> prLst = new SortedList<string, string>();
@@ -12,7 +12,7 @@ namespace NikAmozBookletViewComponent.Components
             prLst.Add("Product2", "Tablet");
             prLst.Add("Product3", "Hedphone");
 
-            return View(viewName,prLst);
+            return View(viewName, prLst);
         }
     }
 }

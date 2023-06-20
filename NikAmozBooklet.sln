@@ -39,7 +39,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NikAmozBookletViewComponent
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TagHelper", "TagHelper", "{63C1002F-AF13-4DF8-92A0-6C5DC8E78302}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NikAmozBooklet.TagHelpers", "NikAmozBooklet.TagHelper\NikAmozBooklet.TagHelpers.csproj", "{3780CBA3-B68B-4D2D-A0CA-1A1ED7D23DB4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NikAmozBooklet.TagHelpers", "NikAmozBooklet.TagHelper\NikAmozBooklet.TagHelpers.csproj", "{3780CBA3-B68B-4D2D-A0CA-1A1ED7D23DB4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ModelBinding", "ModelBinding", "{FB5809ED-971F-4E93-8EFF-60C0609ADEDE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NikAmozBooklet.ModelBinding", "NikAmozBooklet.ModelBinding\NikAmozBooklet.ModelBinding.csproj", "{59C20E68-2EF7-4334-9832-44B0E935161E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -79,6 +83,10 @@ Global
 		{3780CBA3-B68B-4D2D-A0CA-1A1ED7D23DB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3780CBA3-B68B-4D2D-A0CA-1A1ED7D23DB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3780CBA3-B68B-4D2D-A0CA-1A1ED7D23DB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59C20E68-2EF7-4334-9832-44B0E935161E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59C20E68-2EF7-4334-9832-44B0E935161E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59C20E68-2EF7-4334-9832-44B0E935161E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59C20E68-2EF7-4334-9832-44B0E935161E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -100,6 +108,8 @@ Global
 		{3834E60E-F473-4ECE-9461-21977EAC14E8} = {B2D600FB-D9A8-4835-AC58-15158598931E}
 		{63C1002F-AF13-4DF8-92A0-6C5DC8E78302} = {C029726E-FD92-493C-AC39-13A0C34F43CB}
 		{3780CBA3-B68B-4D2D-A0CA-1A1ED7D23DB4} = {63C1002F-AF13-4DF8-92A0-6C5DC8E78302}
+		{FB5809ED-971F-4E93-8EFF-60C0609ADEDE} = {C029726E-FD92-493C-AC39-13A0C34F43CB}
+		{59C20E68-2EF7-4334-9832-44B0E935161E} = {FB5809ED-971F-4E93-8EFF-60C0609ADEDE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6ED1DFE0-84A6-4DE0-ABE8-A56E985B75A1}
