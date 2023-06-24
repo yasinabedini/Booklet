@@ -1,0 +1,23 @@
+﻿@using NikAmozBooklet.ModelValidation.Models
+@model Product
+
+<form asp-action="Register" asp-controller="Product" method="post">
+    <div asp-validation-summary="ModelOnly"></div>    
+
+    <div>
+        <label asp-for="Name"></label>
+        <input type="text" asp-for="Name"/>
+        <span asp-validation-for="Name"></span>
+    </div>
+    <div>
+        <label asp-for="Price"></label>
+        <input type="number" asp-for="Price" />
+        <span asp-validation-for="Price"></span>
+    </div>
+    <div>
+        <input type="submit" name="ثبت نام"/>
+    </div>
+
+</form>
+
+    

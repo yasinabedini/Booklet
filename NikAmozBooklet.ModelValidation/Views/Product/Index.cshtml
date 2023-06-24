@@ -1,0 +1,18 @@
+﻿@using NikAmozBooklet.ModelValidation.Models;
+@model List<Product>
+
+<table>
+    <tr>
+        <td>Id</td>
+        <td>Name</td>
+        <td>Price</td>
+    </tr>
+    @foreach (var item in Model??new List<Product>())
+    {
+     <tr>
+            <td>@item.Id</td>
+            <td>@item.Name</td>
+            <td>@item.Price</td>
+     </tr>   
+    }
+</table>

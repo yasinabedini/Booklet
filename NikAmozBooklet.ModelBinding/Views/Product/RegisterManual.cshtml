@@ -1,0 +1,24 @@
+﻿@using NikAmozBooklet.ModelBinding.Models;
+@model Product
+
+<form asp-controller="Product" asp-action="RegisterManual" method="post">
+
+    <div asp-validation-summary="All"></div>
+
+    <div>
+        <label asp-for="Name"></label>
+        <input type="text" asp-for="Name" />
+        <span asp-validation-for="Name"></span>
+    </div>
+    <hr />
+    <br />
+    <div>
+        <label asp-for="Price"></label>
+        <input type="number" asp-for="Price" />
+        <span asp-validation-for="Price"></span>
+    </div>
+    <div>
+        <input type="submit" />
+    </div>
+
+</form>
