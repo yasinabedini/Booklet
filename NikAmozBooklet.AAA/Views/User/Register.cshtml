@@ -1,0 +1,22 @@
+﻿@using NikAmozBooklet.AAA.Models;
+
+@model CustomUserIdentity
+
+<form asp-controller="User" asp-action="Register" method="post" class="form-floating">
+    <div asp-validation-summary="ModelOnly"></div>
+
+    <div>
+        <label class="form-label" asp-for="UserName"></label>
+        <input class="form-control" asp-for="UserName"/>
+    </div>
+
+    <div>
+        <label class="form-label" asp-for="Email"></label>
+        <input class="form-control" asp-for="Email" />
+    </div>
+
+    <div>
+        <input type="submit" value="ثبت نام" class="btn btn-success"/>
+    </div>
+</form>
+

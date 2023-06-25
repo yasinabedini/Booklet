@@ -1,0 +1,26 @@
+﻿@using NikAmozBooklet.AAA.Models;
+@model IEnumerable<CustomUserIdentity>
+
+<table class="align-content-center table table-striped container w-75 m-5">
+    <tr>
+        <td>آیدی</td>
+        <td>نام کاربری</td>
+        <td>ایمیل</td>
+    </tr>
+    @if (Model.Count() < 1)
+    {
+        <tr class="align-content-center">
+            <td colspan="3">کاربری برای نمایش وجود ندارد!</td>
+        </tr>
+    }
+
+    @foreach (var user in Model)
+    {
+        <tr>
+            <td>@user.Id</td>
+            <td>@user.UserName</td>
+            <td>@user.Email</td>
+        </tr>
+    }
+
+</table>
